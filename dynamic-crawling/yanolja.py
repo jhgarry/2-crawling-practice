@@ -7,12 +7,12 @@ import time
 
 driver = webdriver.Chrome()
 
-url = 'https://www.yanolja.com/reviews/domestic/10041505'
+url = 'https://www.yanolja.com/reviews/domestic/10054600'
 driver.get(url)
 
 time.sleep(3)
 
-scroll_count = 20
+scroll_count = 25
 for _ in range(scroll_count):
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
     time.sleep(1)
